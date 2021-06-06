@@ -32,7 +32,7 @@ public class MappingController {
         return "ok";
     }
 
-    @GetMapping("/mapping/{userId}/orders/{orderId}")
+    @GetMapping("/mapping/users/{userId}/orders/{orderId}")
     public String mappingPath(@PathVariable String userId, @PathVariable Long orderId) {
         log.info("mapping-path userId={}, orderId={}", userId, orderId);
         return "ok";
